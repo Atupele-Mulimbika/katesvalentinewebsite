@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💝</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="floating-hearts"></div>
+    <div class="sparkles"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header animate__animated animate__fadeInDown">
+            <div class="heartbeat">
+                <i class="fas fa-heartbeat"></i>
+                <span>My Heart Beats For You</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Opening Section -->
+            <section class="opening-section animate__animated animate__fadeIn">
+                <div class="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="letter">
+                        <h1 class="title">My Dearest <span class="her-name">Kate</span>,</h1>
+                        <p class="message">From the moment we met, you've painted my world with colors I never knew existed. Your smile is my sunrise, your laughter my favorite melody, and your love the greatest gift I've ever received.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photo Gallery -->
+            <section class="gallery-section animate__animated animate__fadeInUp">
+                <h2 class="section-title"><i class="fas fa-images"></i> My Favourite Pictures Of You  </h2>
+                <div class="gallery">
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="assets/images/photo1.jpg" alt="Memory 1" class="photo">
+                            <div class="photo-overlay">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="assets/images/photo2.jpg" alt="Memory 2" class="photo">
+                            <div class="photo-overlay">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-frame">
+                            <img src="assets/images/photo3.jpg" alt="Memory 3" class="photo">
+                            <div class="photo-overlay">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Love Reasons -->
+            <section class="reasons-section animate__animated animate__fadeIn">
+                <h2 class="section-title"><i class="fas fa-heart"></i> Why I Love You</h2>
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <div class="reason-icon">
+                            <i class="fas fa-smile-beam"></i>
+                        </div>
+                        <h3>Your Smile</h3>
+                        <p>It brightens even my darkest days</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-icon">
+                            <i class="fas fa-laugh"></i>
+                        </div>
+                        <h3>Your Laughter</h3>
+                        <p>The most beautiful sound in the world</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Your Spirit</h3>
+                        <p>You shine brighter than any star</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-icon">
+                            <i class="fas fa-hands"></i>
+                        </div>
+                        <h3>Your Kindness</h3>
+                        <p>You make the world a better place</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- THE PROPOSAL -->
+            <section class="proposal-section animate__animated animate__pulse animate__infinite animate__slower">
+                <div class="proposal-card">
+                    <div class="roses">
+                        <i class="fas fa-spa"></i>
+                        <i class="fas fa-spa"></i>
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h2 class="proposal-title">This Valentine's Day...</h2>
+                    <p class="proposal-text">I want to create more magical moments with you. I want to hold your hand, look into your eyes, and show you every day how incredibly special you are to me.</p>
+                    
+                    <div class="big-question">
+                        <h3><i class="fas fa-heart"></i> Will you be my Valentine? <i class="fas fa-heart"></i></h3>
+                        <div class="buttons-container">
+                            <button id="yesBtn" class="btn yes-btn animate__animated animate__heartBeat animate__infinite animate__slower">
+                                <i class="fas fa-heart"></i> YES! <i class="fas fa-heart"></i>
+                            </button>
+                            <button id="noBtn" class="btn no-btn">
+                                No
+                            </button>
+                        </div>
+                        <p class="hint"><i>Hint: The "Yes" button feels much better to click 😉</i></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Success Message (Hidden Initially) -->
+            <div id="successMessage" class="success-message hidden">
+                <div class="success-content">
+                    <div class="celebration">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h2 class="success-title">You've Made Me The Happiest Person! 🎉</h2>
+                    <p class="success-text">I promise to make this Valentine's Day the most magical one yet! Get ready for surprises, laughter, and unforgettable moments together.</p>
+                    
+                    <div class="countdown">
+                        <h3><i class="fas fa-clock"></i> Countdown to Our Valentine's Day:</h3>
+                        <div class="countdown-timer">
+                            <div class="time-unit">
+                                <span id="days">14</span>
+                                <span>Days</span>
+                            </div>
+                            <div class="time-unit">
+                                <span id="hours">23</span>
+                                <span>Hours</span>
+                            </div>
+                            <div class="time-unit">
+                                <span id="minutes">59</span>
+                                <span>Minutes</span>
+                            </div>
+                            <div class="time-unit">
+                                <span id="seconds">59</span>
+                                <span>Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="celebration-buttons">
+                        <button id="musicBtn" class="btn music-btn">
+                            <i class="fas fa-music"></i>
+                        </button>
+                        <button id="shareBtn" class="btn share-btn">
+                            <i class="fas fa-share-alt"></i> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Love Letter -->
+            <section class="letter-section animate__animated animate__fadeInUp">
+                <div class="love-letter">
+                    <div class="letter-header">
+                        <i class="fas fa-feather-alt"></i>
+                        <h2>A Letter From My Heart</h2>
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <div class="letter-content">
+                        <p>Every day with you, my beautiful Princess, is a lesson in pure happiness. You have a way of turning ordinary moments into something bright and wonderful, just by being in them. It’s not just your smile, though it lights up my world—it’s the genuine care behind it. You see me, you listen and you make me feel deeply understood and valued in a way no one else ever has. Your presence is my safest place and your heart is the greatest gift I’ve ever known. Thank you for being you.</p>
+                        <p>This Valentine's Day, I want to promise you that no matter where life takes us, my love for you will only grow stronger. I'll always be here to support your dreams, celebrate your victories and hold you through any storm.</p>
+                        <p class="signature">
+                            With all my love, forever and always,<br>
+                            <span class="signature-name">Atu</span>
+                        </p>
+                    </div>
+                    <div class="letter-seal">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <i class="fas fa-heart"></i> for the most amazing person in the world</p>
+            <p class="footer-note">This moment will be forever remembered</p>
+        </footer>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="heartbeatSound" src="assets/audio/heartbeat.mp3" loop></audio>
+    <audio id="romanticMusic" src="assets/audio/romantic-music.mp3"></audio>
+    <audio id="successSound" src="https://assets.mixkit.co/sfx/preview/mixkit-happy-crowd-laugh-464.mp3"></audio>
+
+    <!-- Confetti Container -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
